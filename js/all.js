@@ -1,6 +1,7 @@
 var btn = document.getElementById("btn")
 var re = document.getElementById("return")
 var data =JSON.parse(localStorage.getItem('record'))||[]
+var del = document.querySelector(".list")
 
 function update(data){
   var Len = data.length;
@@ -13,6 +14,7 @@ function update(data){
       <span>weight: "+data[i].Weight+" kg</span>\
       <span>height: "+data[i].Height+" cm</span>\
       <span>"+data[i].Time+"</span>\
+      <a href='#' class='delete' data-index="+i+"><i class='fa fa-times'></i> 刪除</a>\
     </li>"
     str += content
   }
@@ -86,5 +88,16 @@ function restart(){
 }
 update(data);
 console.log(data)
+
+function erase(e){
+  e.preventDefault();
+  if(e.target.nodeName !== 'A'){return};
+  var index = e.target.dataset.index;
+  data.splice(index, 1);
+  localStorage.setItem('record', JSON.stringify(data));
+  update(data);
+}
+
 btn.addEventListener("click",calc,false);
 re.addEventListener("click",restart,false);
+del.addEventListener("click",erase,false);

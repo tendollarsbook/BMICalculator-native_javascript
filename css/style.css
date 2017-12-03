@@ -376,3 +376,17 @@ body, html {
 
 .li_over_fat {
   border-left: 8px solid #FF1200; }
+
+.delete {
+  padding: 8px 8px;
+  color: #F2910A;
+  text-decoration: none;
+  background-color: #2C2D34;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 20px; }
+  .delete:hover {
+    color: #2C2D34;
+    background-color: #F2910A; }
