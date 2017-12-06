@@ -69,6 +69,7 @@ body, html {
   -ms-transform: translateY(30%);
   transform: translateY(30%); }
   .calc h2 {
+    font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif;
     color: #F2910A;
     font-size: 18px;
     text-align: left;
@@ -126,6 +127,7 @@ body, html {
   .btn:active {
     background-color: #e58a29; }
   .btn h3 {
+    font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 3px;
@@ -135,6 +137,7 @@ body, html {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
   .btn .result_bmi {
+    font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif;
     font-size: 24px;
     letter-spacing: 2px;
     position: absolute;
@@ -187,6 +190,7 @@ body, html {
   background-color: #eee;
   height: 500px; }
   .content h2 {
+    font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif;
     font-size: 24px;
     text-align: center;
     padding: 32px; }
